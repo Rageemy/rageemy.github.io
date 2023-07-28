@@ -1,0 +1,75 @@
+body 
+{
+
+	padding: 10px;
+	background-image: url("gradient.png");
+}
+
+@keyframes headingKF
+{
+	0%  {color: blue; letter-spacing: 5px;}
+	25%  {letter-spacing: 20px;}
+	50%  {color: DarkTurquoise; letter-spacing: 20px;}
+	55%  {letter-spacing: 0px;}
+	100% {color: blue; letter-spacing: 5px;}
+}
+
+@keyframes introKF
+{
+	0%  {color: black; letter-spacing: 3px;}
+	25%  {letter-spacing: 6px;}
+	50%  {color: DarkTurquoise; letter-spacing: 6px;}
+	55%  {letter-spacing: 0px;}
+	100% {color: black; letter-spacing: 3px;}
+}
+
+a:link
+{
+	color:DarkTurquoise;
+}
+
+a:visited
+{
+	color:blue;
+}
+
+#heading
+{
+	font-family: "Helvetica", sans-serif;
+	font-size: 100;
+	text-align: center;
+	color: white;
+	
+	animation-name: headingKF;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+#image 
+{
+	float: left;
+	border-style: double;
+	margin-right: 25px;
+}
+
+#intro 
+{
+	font-family: "Helvetica", sans-serif;
+	font-size: 35;
+	letter-spacing: 3px;
+}
+
+#intro:hover
+{
+	animation-name: introKF;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+#price
+{
+	font-family: "Helvetica", sans-serif;
+	font-size: 20;
+	color: DarkTurquoise;
+}
+
